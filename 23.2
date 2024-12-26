@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    long long product = 1;
+
+    printf("Введите число n: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        product *= i;
+    }
+
+    printf("Произведение чисел от 1 до %d: %lld\n", n, product);
+
+    return 0;
+}
